@@ -1,0 +1,81 @@
+/* Reset + base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+}
+
+/* Container grid */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card */
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px 20px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Avatar */
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+/* Name */
+.card h2 {
+  margin: 8px 0 6px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #111;
+}
+
+/* Email */
+.card p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #555;
+  word-break: break-word;
+}
+
+/* Location */
+.card .location {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #888;
+}
+
+/* Status messages */
+.status {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 18px;
+  color: #444;
+}
+
+.error {
+  color: #d32f2f;
+  font-weight: 500;
+}
